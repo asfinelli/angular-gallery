@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges } from '@angular/core';
+import { ImageService } from '../image/shared/image.service';
+
 
 @Component({
   selector: 'app-image-detail',
@@ -7,5 +9,5 @@ import { Component } from '@angular/core';
 })
 
 export class ImageDetailComponent {
-  title='Recent Photos'
+  constructor(private imageService: ImageService)
 }
