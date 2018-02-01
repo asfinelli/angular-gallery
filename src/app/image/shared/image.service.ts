@@ -1,4 +1,5 @@
-import { Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
+
 
 @Injectable()
 export class ImageService{
@@ -10,6 +11,7 @@ export class ImageService{
   getImage(id: number){
     return IMAGES.slice(0).find(image => image.id == id)
   }
+
 }
 
 
