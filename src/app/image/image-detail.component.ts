@@ -8,5 +8,5 @@ import { ImageService } from '../shared/image.service';
 })
 
 export class ImageDetailComponent {
-  constructor(private imageService: ImageService){}
+  constructor(private imageService: ImageService)
 }
