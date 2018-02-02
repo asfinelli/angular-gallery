@@ -7,6 +7,11 @@ import { ImageService } from '../shared/image.service';
   styleUrls: ['./gallery.component.css']
 })
 
+export class GalleryCompoenent{
+  title = 'Recent Photos';
+  visibleImages: any[] = [];
+}
+
  constructor(private imageService: ImageService) {
    this.visibleImages = this.imageService.getImages();
 }

@@ -4,11 +4,15 @@ import { AlertModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
 import { ImageService } from './shared/image.service';
+import { GalleryComponent} from './gallery/gallery.compenent';
+import { NavBarComponent} from './navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
