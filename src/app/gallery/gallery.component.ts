@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges } from '@angular/core';
 import { ImageService } from '../shared/image.service';
 
 @Component({
