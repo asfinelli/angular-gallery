@@ -16,5 +16,5 @@ export class ImageService{
 const IMAGES =[
     {"id": 1, "category": "airplanes", "caption": "747", "url":"assets/img/747.jpg"},
     {"id": 2, "category": "airplanes", "caption": "787", "url":"assets/img/787.jpg"},
-    {"id": 3, "category": "airplanes", "caption": "a330neo", "url":"assets/img/a330neo.jpg"}
+    {"id": 3, "category": "airplanes", "caption": "a330neo", "url":"assets/img/A330neo.jpg"}
   ]

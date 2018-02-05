@@ -1,5 +1,9 @@
+<h2>{{title}}</h2>
+
 <div class="row">
-  <h2> Airplane Pictures </h2>
+  <button class="btn btn-lg btn-info"[class.active]="filterBy=='all'" (click)="filterBy--'all'">All</button>
+  <button class="btn btn-lg btn-info">Airplanes</button>
+
   <ul id="thumbnailsList">
         <li *ngFor="let image of visibleImages" >
                 <img src="{{image.url}}" class="tn" width="200" height="160">
