@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AlertModule } from 'ngx-bootstrap';
 
+import { ImageFilterPipe } from './shared/filter.pipe';
 import { AppComponent } from './app.component';
 import { ImageService } from './shared/image.service';
 import { GalleryComponent} from './gallery/gallery.component';
@@ -15,13 +16,14 @@ import { ImageDetailComponent } from './image/image-detail.component';
     AppComponent,
     NavbarComponent,
     GalleryComponent,
-    ImageDetailComponent
+    ImageDetailComponent,
+    ImageFilterPipe
   ],
   imports: [
     BrowserModule,
     AlertModule.forRoot()
   ],
-  providers: [ImageService],
+  providers: [ImageService, ImageFilterPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
