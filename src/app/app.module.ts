@@ -8,6 +8,9 @@ import { ImageService } from './shared/image.service';
 import { GalleryComponent} from './gallery/gallery.component';
 import { NavbarComponent} from './navbar/navbar.component';
 import { ImageDetailComponent } from './image/image-detail.component';
+import { appRoutes } from '../routes';
+import { RouterModule, Routes } from '@angular/router';
+
 
 
 
@@ -21,7 +24,8 @@ import { ImageDetailComponent } from './image/image-detail.component';
   ],
   imports: [
     BrowserModule,
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [ImageService, ImageFilterPipe],
   bootstrap: [AppComponent]
